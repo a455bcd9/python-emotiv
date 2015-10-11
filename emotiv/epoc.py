@@ -18,7 +18,7 @@
 ## Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 
 """\
-This module provides the EPOC class for accessing Emotiv EPOC
+This module provides the EPOC+ class for accessing Emotiv EPOC+
 EEG headsets.
 """
 
@@ -40,7 +40,7 @@ class EPOCError(Exception):
 
 
 class EPOCTurnedOffError(EPOCError):
-    """Exception raised when Emotiv EPOC is not turned on."""
+    """Exception raised when Emotiv EPOC+ is not turned on."""
     pass
 
 
@@ -65,11 +65,11 @@ class EPOCPermissionError(EPOCError):
 
 
 class EPOC(object):
-    """Class for accessing Emotiv EPOC headset devices."""
+    """Class for accessing research EPOC+ headset devices."""
 
     # Device descriptions for USB
-    INTERFACE_DESC = "Emotiv RAW DATA"
-    MANUFACTURER_PREFIX = "Emotiv Systems"
+    INTERFACE_DESC = "EEG Signals"
+    MANUFACTURER_PREFIX = "Emotiv"
 
     # Channel names
     channels = ["F3", "FC5", "AF3", "F7", "T7", "P7", "O1",
@@ -205,7 +205,7 @@ class EPOC(object):
         devices = usb.core.find(find_all=True, custom_match=self._is_epoc)
 
         if not devices:
-            raise EPOCNotPluggedError("Emotiv EPOC not found.")
+            raise EPOCNotPluggedError("Emotiv EPOC+ not found.")
 
         for dev in devices:
             serial = usb.util.get_string(dev, dev.iSerialNumber)
