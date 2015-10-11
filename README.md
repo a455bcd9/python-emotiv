@@ -4,16 +4,14 @@ Emotiv EPOC+ Python Interface
 EPOC+ vs EPOC
 -------------
 This fork is done for the EPOC+:
-
-Sample Rate: EPOC: 128Hz vs. EPOC+ : 128Hz or 256Hz
-Resolution: EPOC: 14bit(0.51µV) vs. EPOC+ : 14bit(0.51µV) or 16bit(0.31µV)
-Sensors: EPOC: 2-axis gyro vs. EPOC+: 9 axis sensor (3x gyro, 3x accelerometer, 3x magnetometer)
-
-VID: 1234 / PID: ED02
-ID 1234:ed02 Brain Actuated Technologies Emotiv EPOC Developer Headset Wireless Dongle
-iManufacturer           1 Emotiv
-iProduct                2 Brain Computer Interface USB Receiver/Dongle
-iInterface              4 EEG Signals
+* Sample Rate: EPOC: 128Hz vs. EPOC+ : 128Hz or 256Hz
+* Resolution: EPOC: 14bit(0.51µV) vs. EPOC+ : 14bit(0.51µV) or 16bit(0.31µV)
+* Sensors: EPOC: 2-axis gyro vs. EPOC+: 9 axis sensor (3x gyro, 3x accelerometer, 3x magnetometer)
+* VID: 1234 / PID: ED02
+* ID 1234:ed02 Brain Actuated Technologies Emotiv EPOC Developer Headset Wireless Dongle
+* iManufacturer           1 Emotiv
+* iProduct                2 Brain Computer Interface USB Receiver/Dongle
+* iInterface              4 EEG Signals
 
 Unmaintained as of January 2015
 -------------
