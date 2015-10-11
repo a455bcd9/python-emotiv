@@ -10,7 +10,7 @@ if __name__ == "__main__":
     for dev in glob.glob("/sys/bus/usb/devices/*"):
         try:
             manu = open(os.path.join(dev, "manufacturer")).read().strip()
-            if manu == "Emotiv Systems Pty Ltd":
+            if manu == "Emotiv":
                 epoc = os.path.basename(dev)
         except:
             pass
